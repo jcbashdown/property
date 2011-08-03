@@ -1,0 +1,9 @@
+one:
+  name: MyString
+  extension: MyString
+  allow_expiry:
+
+two:
+  name: MyString
+  extension: MyString
+  allow_expiry:

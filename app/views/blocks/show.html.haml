@@ -1,0 +1,18 @@
+- title "Block"
+
+%p
+  %strong Name:
+  = @block.name
+%p
+  %strong Postcode:
+  = @block.postcode
+%p
+  %strong Build Date:
+  = @block.build_date
+
+%p
+  = link_to "Edit", edit_block_path(@block)
+  |
+  = link_to "Destroy", @block, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", blocks_path

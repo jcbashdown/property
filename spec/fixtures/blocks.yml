@@ -1,0 +1,9 @@
+one:
+  name: MyString
+  postcode: MyString
+  build_date: 2011-07-26 12:01:47
+
+two:
+  name: MyString
+  postcode: MyString
+  build_date: 2011-07-26 12:01:47

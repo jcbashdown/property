@@ -1,0 +1,16 @@
+= form_for @block do |f|
+  = f.error_messages
+  %p
+    = f.label :name
+    %br
+    = f.text_field :name
+  %p
+    = f.label :postcode
+    %br
+    = f.text_field :postcode
+  %p
+    = f.label :build_date
+    %br
+    = f.datetime_select :build_date
+  %p
+    = f.submit

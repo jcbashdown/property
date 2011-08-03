@@ -1,0 +1,39 @@
+-# This whole things needs alot more helpers and such to tidy it up, yeugh.
+- title "Blocks"
+%h1= "Property Property Database"
+%table
+  %tr
+    %th Name
+    %th Postcode
+    %th Build date
+    - @doc_types.each do |type|
+      %th
+        %span.left= type.name+":"
+        %span.right= link_to 'Delete type', type, :confirm => 'Are you sure?', :method => :delete
+  - for block in @blocks
+    %tr
+      %td= block.name
+      %td= block.postcode
+      %td= block.build_date
+      - @doc_types.each do |type|
+        - if !block.document_types[type.id].blank?
+          %td
+            %br
+            %div.centred= link_to "Download", Document.find_by_block_id_and_document_type_id(block.id, type.id).doc.url(:original, false)
+            %div.centred= link_to 'Delete document', Document.find_by_block_id_and_document_type_id(block.id, type.id), :confirm => 'Are you sure?', :method => :delete
+            %p= "Uploaded at: "+ Document.find_by_block_id_and_document_type_id(block.id, type.id).updated_at.to_s
+            -if fire(Document.find_by_block_id_and_document_type_id(block.id, type.id))
+              %p.fire= type.allow_expiry ? "Expiry Date: "+ Document.find_by_block_id_and_document_type_id(block.id, type.id).expiry_date.to_s : ""
+            -else
+              %p= type.allow_expiry ? "Expiry Date: "+ Document.find_by_block_id_and_document_type_id(block.id, type.id).expiry_date.to_s : ""
+        - else
+          -unless block.build_date<type.valid_from
+            %td= link_to('Add Document', :controller => "documents", :action => "new", :doc_type_id => type.id, :id =>block.id)
+          -else
+            %td= "Cannot have a and asbestos report for blocks before 01/01/2000"
+      %td= link_to 'Show', block
+      %td= link_to 'Edit', edit_block_path(block)
+      %td= link_to 'Destroy', block, :confirm => 'Are you sure?', :method => :delete
+
+%span=link_to "New Block", new_block_path
+%span=link_to "New Document Type", new_document_type_path

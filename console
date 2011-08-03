@@ -1,0 +1,1572 @@
+Script started on Wed 27 Jul 2011 11:16:11 CST
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ scr[K[K[Krails console
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+Loading development environment (Rails 3.0.6)
+ruby-1.9.2-p180 :001 > Document_type[K[K[K[KType.first
+LoadError: Expected /home/jacob/NetBeansProjects/property/app/models/document_type.rb to define Document_Type
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.6/lib/active_support/dependencies.rb:492:in `load_missing_constant'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.6/lib/active_support/dependencies.rb:183:in `block in const_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.6/lib/active_support/dependencies.rb:181:in `each'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activesupport-3.0.6/lib/active_support/dependencies.rb:181:in `const_missing'
+	from (irb):1
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :002 > Document_Type.first[1PType.first
+ => #<DocumentType id: 1, name: "type 1", extension: ".doc", created_at: "2011-07-27 17:18:17", updated_at: "2011-07-27 17:18:17"> 
+ruby-1.9.2-p180 :003 > Block.first
+ => #<Block id: 1, name: "block", postcode: "postcode", build_date: "2011-07-27 16:09:00", created_at: "2011-07-27 16:10:00", updated_at: "2011-07-27 16:10:00"> 
+ruby-1.9.2-p180 :004 > Document.new{block_id=>1, document_type_id=>1, path=""/"u"s" [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr""[C}
+SyntaxError: (irb):4: syntax error, unexpected tASSOC, expecting '}'
+Document.new{block_id=>1, document_type_id=>1, path="/usr"}
+                       ^
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :005 > Document.new{block_id=>1, document_type_id=>1, path="/usr""}[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CBlock.first[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CDocument.new{block_id=>1, document_type_id=>1, path="/usr""}[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KdDocument.new Document.new=Document.new Document.new
+ => #<Document id: nil, path: nil, document_type_id: nil, block_id: nil, created_at: nil, updated_at: nil, expiry_date: nil> 
+ruby-1.9.2-p180 :006 > d.block_id=1
+ => 1 
+ruby-1.9.2-p180 :007 > d.save
+ => true 
+ruby-1.9.2-p180 :008 > d.saveblock_id=1[1P_id=1[1P_id=1[1P_id=1[1P_id=1[1P_id=1d_id=1o_id=1c_id=1u_id=1m_id=1e_id=1n_id=1t_id=1[C_id=1t_id=1y_id=1p_id=1e_id=1
+ => 1 
+ruby-1.9.2-p180 :009 > ls
+NameError: undefined local variable or method `ls' for main:Object
+	from (irb):9
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :010 > d
+ => #<Document id: 1, path: nil, document_type_id: 1, block_id: 1, created_at: "2011-07-27 17:21:59", updated_at: "2011-07-27 17:21:59", expiry_date: nil> 
+ruby-1.9.2-p180 :011 > Block.first.documents
+ => [#<Document id: 1, path: nil, document_type_id: nil, block_id: 1, created_at: "2011-07-27 17:21:59", updated_at: "2011-07-27 17:21:59", expiry_date: nil>] 
+ruby-1.9.2-p180 :012 > Block.first.documents.document_types
+NoMethodError: undefined method `document_types' for #<Class:0x938fce4>
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:1008:in `method_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_collection.rb:444:in `block in method_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:1121:in `with_scope'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_proxy.rb:207:in `with_scope'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_collection.rb:440:in `method_missing'
+	from (irb):12
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :013 > Block.first.documents.document_types[C.document_typesfdocument_typesidocument_typesrdocument_typessdocument_typestdocument_types[1Pdocument_types[1Pdocument_types[1Pdocument_types[1Pdocument_types[1Pdocument_types[1Pdocument_typesfdocument_typesidocument_typessdocument_typesrdocument_types[1Pdocument_types[1Pdocument_typesrdocument_typessdocument_typestdocument_types.document_types
+NoMethodError: undefined method `document_types' for #<Document:0x9158264>
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activemodel-3.0.6/lib/active_model/attribute_methods.rb:367:in `method_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/attribute_methods.rb:46:in `method_missing'
+	from (irb):13
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :014 > Block.first.documents.first.document_types[C[K
+ActiveRecord::StatementInvalid: Mysql2::Error: Unknown column 'document_types.document_id' in 'where clause': SELECT  `document_types`.* FROM `document_types` WHERE (`document_types`.document_id = 1) LIMIT 1
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract_adapter.rb:207:in `rescue in log'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract_adapter.rb:199:in `log'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:314:in `execute'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:635:in `select'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/query_cache.rb:56:in `select_all'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:467:in `find_by_sql'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation.rb:64:in `to_a'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:333:in `find_first'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:122:in `first'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:105:in `find'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:101:in `find'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:439:in `find'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/has_one_association.rb:88:in `find_target'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_proxy.rb:241:in `load_target'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_proxy.rb:118:in `reload'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations.rb:1442:in `block in association_accessor_methods'
+	from (irb):14
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'ruby-1.9.2-p180 :015 > Block.first.documents.first.document_type
+ActiveRecord::StatementInvalid: Mysql2::Error: Unknown column 'document_types.document_id' in 'where clause': SELECT  `document_types`.* FROM `document_types` WHERE (`document_types`.document_id = 1) LIMIT 1
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract_adapter.rb:207:in `rescue in log'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract_adapter.rb:199:in `log'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:314:in `execute'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:635:in `select'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/query_cache.rb:56:in `select_all'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:467:in `find_by_sql'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation.rb:64:in `to_a'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:333:in `find_first'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:122:in `first'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:105:in `find'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:101:in `find'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:439:in `find'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/has_one_association.rb:88:in `find_target'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_proxy.rb:241:in `load_target'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_proxy.rb:118:in `reload'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations.rb:1442:in `block in association_accessor_methods'
+	from (irb):15
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'ruby-1.9.2-p180 :016 > exit
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails console
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+Loading development environment (Rails 3.0.6)
+ruby-1.9.2-p180 :001 > block.documents
+NameError: undefined local variable or method `block' for main:Object
+	from (irb):1
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :002 > block.documents[1Plock.documentsBlock.documents[C[C[C[C[C.documentsf.documentsi.documentsr.documentss.documentst.documents
+ => [#<Document id: 1, path: nil, document_type_id: nil, block_id: 1, created_at: "2011-07-27 17:21:59", updated_at: "2011-07-27 17:21:59", expiry_date: nil>] 
+ruby-1.9.2-p180 :003 > Block.first.documents.document_type
+NoMethodError: undefined method `document_type' for #<Class:0xa5e7068>
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:1008:in `method_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_collection.rb:444:in `block in method_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:1121:in `with_scope'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_proxy.rb:207:in `with_scope'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_collection.rb:440:in `method_missing'
+	from (irb):3
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :004 > Block.first.documents.document_type[C[C[Cfdocument_typeidocument_typerdocument_typesdocument_typetdocument_type.document_type
+ActiveRecord::StatementInvalid: Mysql2::Error: Unknown column 'document_types.document_id' in 'where clause': SELECT  `document_types`.* FROM `document_types` WHERE (`document_types`.document_id = 1) LIMIT 1
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract_adapter.rb:207:in `rescue in log'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract_adapter.rb:199:in `log'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:314:in `execute'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:635:in `select'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/database_statements.rb:7:in `select_all'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/query_cache.rb:56:in `select_all'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:467:in `find_by_sql'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation.rb:64:in `to_a'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:333:in `find_first'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:122:in `first'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:105:in `find'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/relation/finder_methods.rb:101:in `find'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:439:in `find'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/has_one_association.rb:88:in `find_target'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_proxy.rb:241:in `load_target'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_proxy.rb:118:in `reload'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations.rb:1442:in `block in association_accessor_methods'
+	from (irb):4
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'ruby-1.9.2-p180 :005 > exit
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails console
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+Loading development environment (Rails 3.0.6)
+ruby-1.9.2-p180 :001 > exitBlock.first.documents.first.document_type
+ => nil 
+ruby-1.9.2-p180 :002 > Document.first
+ => #<Document id: 1, path: nil, document_type_id: nil, block_id: 1, created_at: "2011-07-27 17:21:59", updated_at: "2011-07-27 17:21:59", expiry_date: nil> 
+ruby-1.9.2-p180 :003 > Document.firstsDocument.first Document.first=Document.first
+ => #<Document id: 1, path: nil, document_type_id: nil, block_id: 1, created_at: "2011-07-27 17:21:59", updated_at: "2011-07-27 17:21:59", expiry_date: nil> 
+ruby-1.9.2-p180 :004 > s.document_type.[K_id=1
+ => 1 
+ruby-1.9.2-p180 :005 > s.save
+ => true 
+ruby-1.9.2-p180 :006 > s.savedocument_type_id=1[3P =Document.first[3PDocument.firstBlock.first.documents.first.document_type
+ => #<DocumentType id: 1, name: "type 1", extension: ".doc", created_at: "2011-07-27 17:18:17", updated_at: "2011-07-27 17:18:17"> 
+ruby-1.9.2-p180 :007 > Block.first.documents.first.document_type[1Pdocument_type[1Pdocument_type[1Pdocument_type[1Pdocument_type[1Pdocument_type[1Pdocument_type
+NoMethodError: undefined method `document_type' for #<Class:0xa456758>
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:1008:in `method_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_collection.rb:444:in `block in method_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:1121:in `with_scope'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_proxy.rb:207:in `with_scope'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_collection.rb:440:in `method_missing'
+	from (irb):7
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :008 > Block.first.documents.document_types
+NoMethodError: undefined method `document_types' for #<Class:0xa456758>
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:1008:in `method_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_collection.rb:444:in `block in method_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:1121:in `with_scope'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_proxy.rb:207:in `with_scope'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_collection.rb:440:in `method_missing'
+	from (irb):8
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :009 > exit
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ r[Kbungle ins[K[K[K[K[K[K[Kdle install
+/home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/bundler-1.0.10/lib/bundler/dsl.rb:7:in `instance_eval': /home/jacob/NetBeansProjects/property/Gemfile:14: syntax error, unexpected tIDENTIFIER, expecting $end (SyntaxError)
+# gem 'unicorn'
+              ^
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/bundler-1.0.10/lib/bundler/dsl.rb:7:in `evaluate'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/bundler-1.0.10/lib/bundler/definition.rb:17:in `build'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/bundler-1.0.10/lib/bundler.rb:136:in `definition'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/bundler-1.0.10/lib/bundler/cli.rb:226:in `install'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/bundler-1.0.10/lib/bundler/vendor/thor/task.rb:22:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/bundler-1.0.10/lib/bundler/vendor/thor/invocation.rb:118:in `invoke_task'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/bundler-1.0.10/lib/bundler/vendor/thor.rb:246:in `dispatch'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/bundler-1.0.10/lib/bundler/vendor/thor/base.rb:389:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/bundler-1.0.10/bin/bundle:13:in `<top (required)>'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/bin/bundle:19:in `load'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/bin/bundle:19:in `<main>'
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ bundle install[1Prails consolesudo apt-get install postfix[15Prails consolebundle install[1Prails console
+[31mCould not find gem 'rspec (>= 0)' in any of the gem sources listed in your Gemfile.[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails consolebundle install[1Prails consolesudo apt-get install postfix[15Prails console
+[31mCould not find gem 'rspec (>= 0)' in any of the gem sources listed in your Gemfile.[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails consolebundle install
+Fetching source index for http://rubygems.org/
+Using rake (0.8.7) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.6) 
+Using builder (2.1.2) 
+Using i18n (0.5.0) 
+Using activemodel (3.0.6) 
+Using erubis (2.6.6) 
+Using rack (1.2.2) 
+Using rack-mount (0.6.14) 
+Using rack-test (0.5.7) 
+Using tzinfo (0.3.26) 
+Using actionpack (3.0.6) 
+Using mime-types (1.16) 
+Using polyglot (0.3.1) 
+Using treetop (1.4.9) 
+Using mail (2.2.15) 
+Using actionmailer (3.0.6) 
+Using arel (2.0.9) 
+Using activerecord (3.0.6) 
+Using activeresource (3.0.6) 
+Using bundler (1.0.10) 
+Installing diff-lcs (1.1.2) 
+Using haml (3.1.2) 
+Using mocha (0.9.12) 
+Using mysql2 (0.2.6) 
+Using nifty-generators (0.4.6) 
+Using thor (0.14.6) 
+Using railties (3.0.6) 
+Using rails (3.0.6) 
+Installing rspec-core (2.6.4) 
+Installing rspec-expectations (2.6.0) 
+Installing rspec-mocks (2.6.0) 
+Installing rspec (2.6.0) 
+Installing rspec-rails (2.6.1) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ bundle install[1Prails console
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+Loading development environment (Rails 3.0.6)
+ruby-1.9.2-p180 :001 > exitBlock.first.documents.document_types
+NoMethodError: undefined method `document_types' for #<Class:0xa5deb48>
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:1008:in `method_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_collection.rb:444:in `block in method_missing'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/base.rb:1121:in `with_scope'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_proxy.rb:207:in `with_scope'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/associations/association_collection.rb:440:in `method_missing'
+	from (irb):1
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:44:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands/console.rb:8:in `start'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/railties-3.0.6/lib/rails/commands.rb:23:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+ruby-1.9.2-p180 :002 > Block.first.documents.document_types[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[KBlock.first.documents.document_types[1Pdocument_types[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+ => [#<Document id: 1, path: nil, document_type_id: 1, block_id: 1, created_at: "2011-07-27 17:21:59", updated_at: "2011-07-27 17:30:31", expiry_date: nil>] 
+ruby-1.9.2-p180 :003 > Block.first.documents.class
+ => Array 
+ruby-1.9.2-p180 :004 > exit
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec block_spec.rb
+/home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load': no such file to load -- /home/jacob/NetBeansProjects/property/block_spec.rb (LoadError)
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `block in load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `map'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:18:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:80:in `run_in_process'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:69:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:11:in `block in autorun'
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ cd specs
+bash: cd: specs: No such file or directory
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ ls
+[0m[01;34mapp[0m        console  Gemfile       [01;34mlog[0m        Rakefile  [01;34mspec[0m  [01;34mvendor[0m
+[01;34mconfig[0m     [01;34mdb[0m       Gemfile.lock  [01;34mnbproject[0m  README    [01;34mtest[0m
+config.ru  [01;34mdoc[0m      [01;34mlib[0m           [01;34mpublic[0m     [01;34mscript[0m    [01;34mtmp[0m
+[m]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ cd spec
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/specjacob@jacob-laptop:~/NetBeansProjects/property/spec$ rspec[K[K[K[K[Kcd[K[Krspec model[K[K[K[K[K[K[K[K[K[K[Kls
+[0m[01;34mcontrollers[0m  [01;34mfixtures[0m  [01;34mmodels[0m
+[m]0;jacob@jacob-laptop: ~/NetBeansProjects/property/specjacob@jacob-laptop:~/NetBeansProjects/property/spec$ rspec models/block_spec.rb
+/home/jacob/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require': no such file to load -- /home/jacob/NetBeansProjects/property/spec/models/../spec_helper (LoadError)
+	from /home/jacob/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /home/jacob/NetBeansProjects/property/spec/models/block_spec.rb:1:in `<top (required)>'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `block in load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `map'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:18:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:80:in `run_in_process'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:69:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:11:in `block in autorun'
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/specjacob@jacob-laptop:~/NetBeansProjects/property/spec$ rspec models/block_spec.rb[C[1P
+The program 'spec' is currently not installed.  You can install it by typing:
+sudo apt-get install librspec-ruby1.8
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/specjacob@jacob-laptop:~/NetBeansProjects/property/spec$ cd models
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ cd modelsspec models/block_specc.rb[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cblock_spec.[1Prb[A]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ [C[C[C[C[C[C[C[C[C[C[Cblock_spec.r[1Pb[A]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ [C[C[C[C[C[C[C[C[C[Cblock_spec.rb[K[A]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ [C[C[C[C[C[C[C[C[Cblock_spec.rb [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pblock_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pblock_spec.rb[1Pblock_spec.rb
+The program 'spec' is currently not installed.  You can install it by typing:
+sudo apt-get install librspec-ruby1.8
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ spec block_spec.rb[1@r
+/home/jacob/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require': no such file to load -- /home/jacob/NetBeansProjects/property/spec/models/../spec_helper (LoadError)
+	from /home/jacob/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+	from /home/jacob/NetBeansProjects/property/spec/models/block_spec.rb:1:in `<top (required)>'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `block in load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `map'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:18:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:80:in `run_in_process'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:69:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:11:in `block in autorun'
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ script/rails generate  rspec:install
+bash: script/rails: No such file or directory
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ script/rails generate  rspec:install[A]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/specjacob@jacob-laptop:~/NetBeansProjects/property/spec$ cd ..
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ cd ..script/rails generate rspec:installl[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [14Prspec block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscript/rails generate rspec:installl
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+[1m[32m      create[0m  .rspec
+[1m[34m       exist[0m  spec
+[1m[32m      create[0m  spec/spec_helper.rb
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ script/rails generate rspec:installl[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscript/rails generate rspec:installl[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [14Prspec block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcd modelsspec models/block_spec.rb[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd specls[Kcd spec
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/specjacob@jacob-laptop:~/NetBeansProjects/property/spec$ cd specscript/rails generate rspec:iinstall[A]0;jacob@jacob-laptop: ~/NetBeansProjects/property/specjacob@jacob-laptop:~/NetBeansProjects/property/spec$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscript/rails generate rspec:iinstall[A]0;jacob@jacob-laptop: ~/NetBeansProjects/property/specjacob@jacob-laptop:~/NetBeansProjects/property/spec$ [9Prspec block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcd modelsspec models/block_spec.rb[16Pcd models
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ cd models[2Pspecscript/rails generate  rspec:install[A]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ cd ..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscript/rails generate  rspec:install[A]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ [2Prspec block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+FF
+
+Failures:
+
+  1) Block should be valid
+     Failure/Error: Unable to find matching line from backtrace
+     Mysql2::Error:
+       Access denied for user 'root'@'localhost' (using password: NO)
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/mysql2/client.rb:37:in `connect'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/mysql2/client.rb:37:in `initialize'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `new'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `mysql2_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `new_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:237:in `checkout_new_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:191:in `block (2 levels) in checkout'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:187:in `loop'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:187:in `block in checkout'
+     # /home/jacob/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:186:in `checkout'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:94:in `connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:317:in `retrieve_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:97:in `retrieve_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:89:in `connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:509:in `create_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:973:in `load_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:938:in `setup_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-rails-2.6.1/lib/rspec/rails/adapters.rb:11:in `block (2 levels) in setup'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:35:in `instance_eval'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:35:in `run_in'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `block in run_all'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `run_all'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:116:in `run_hook'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `block in eval_before_eachs'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `eval_before_eachs'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:145:in `run_before_each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:47:in `block in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:107:in `with_around_hooks'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:45:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:294:in `block in run_examples'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:290:in `map'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:290:in `run_examples'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:262:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `block (2 levels) in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `map'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `block in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/reporter.rb:12:in `report'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:21:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:80:in `run_in_process'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:69:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:11:in `block in autorun'
+
+  2) Block should return all the document types it has
+     Failure/Error: Unable to find matching line from backtrace
+     Mysql2::Error:
+       Access denied for user 'root'@'localhost' (using password: NO)
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/mysql2/client.rb:37:in `connect'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/mysql2/client.rb:37:in `initialize'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `new'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `mysql2_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `new_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:237:in `checkout_new_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:191:in `block (2 levels) in checkout'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:187:in `loop'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:187:in `block in checkout'
+     # /home/jacob/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:186:in `checkout'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:94:in `connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:317:in `retrieve_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:97:in `retrieve_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:89:in `connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:509:in `create_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:973:in `load_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:938:in `setup_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-rails-2.6.1/lib/rspec/rails/adapters.rb:11:in `block (2 levels) in setup'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:35:in `instance_eval'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:35:in `run_in'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `block in run_all'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `run_all'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:116:in `run_hook'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `block in eval_before_eachs'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `eval_before_eachs'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:145:in `run_before_each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:47:in `block in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:107:in `with_around_hooks'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:45:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:294:in `block in run_examples'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:290:in `map'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:290:in `run_examples'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:262:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `block (2 levels) in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `map'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `block in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/reporter.rb:12:in `report'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:21:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:80:in `run_in_process'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:69:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:11:in `block in autorun'
+
+Finished in 0.01704 seconds
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./block_spec.rb:4 # Block should be valid
+rspec ./block_spec.rb:8 # Block should return all the document types it has
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+FF
+
+Failures:
+
+  1) Block should be valid
+     Failure/Error: Unable to find matching line from backtrace
+     Mysql2::Error:
+       Unknown database 'property_test'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/mysql2/client.rb:37:in `connect'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/mysql2/client.rb:37:in `initialize'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `new'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `mysql2_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `new_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:237:in `checkout_new_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:191:in `block (2 levels) in checkout'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:187:in `loop'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:187:in `block in checkout'
+     # /home/jacob/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:186:in `checkout'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:94:in `connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:317:in `retrieve_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:97:in `retrieve_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:89:in `connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:509:in `create_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:973:in `load_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:938:in `setup_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-rails-2.6.1/lib/rspec/rails/adapters.rb:11:in `block (2 levels) in setup'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:35:in `instance_eval'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:35:in `run_in'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `block in run_all'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `run_all'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:116:in `run_hook'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `block in eval_before_eachs'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `eval_before_eachs'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:145:in `run_before_each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:47:in `block in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:107:in `with_around_hooks'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:45:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:294:in `block in run_examples'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:290:in `map'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:290:in `run_examples'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:262:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `block (2 levels) in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `map'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `block in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/reporter.rb:12:in `report'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:21:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:80:in `run_in_process'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:69:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:11:in `block in autorun'
+
+  2) Block should return all the document types it has
+     Failure/Error: Unable to find matching line from backtrace
+     Mysql2::Error:
+       Unknown database 'property_test'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/mysql2/client.rb:37:in `connect'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/mysql2/client.rb:37:in `initialize'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `new'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/mysql2-0.2.6/lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `mysql2_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:229:in `new_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:237:in `checkout_new_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:191:in `block (2 levels) in checkout'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:187:in `loop'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:187:in `block in checkout'
+     # /home/jacob/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/monitor.rb:201:in `mon_synchronize'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:186:in `checkout'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:94:in `connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_pool.rb:317:in `retrieve_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:97:in `retrieve_connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/connection_adapters/abstract/connection_specification.rb:89:in `connection'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:509:in `create_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:973:in `load_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/activerecord-3.0.6/lib/active_record/fixtures.rb:938:in `setup_fixtures'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-rails-2.6.1/lib/rspec/rails/adapters.rb:11:in `block (2 levels) in setup'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:35:in `instance_eval'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:35:in `run_in'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `block in run_all'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:70:in `run_all'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/hooks.rb:116:in `run_hook'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `block in eval_before_eachs'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:221:in `eval_before_eachs'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:145:in `run_before_each'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:47:in `block in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:107:in `with_around_hooks'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example.rb:45:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:294:in `block in run_examples'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:290:in `map'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:290:in `run_examples'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/example_group.rb:262:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `block (2 levels) in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `map'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:24:in `block in run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/reporter.rb:12:in `report'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:21:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:80:in `run_in_process'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:69:in `run'
+     # /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:11:in `block in autorun'
+
+Finished in 0.04292 seconds
+2 examples, 2 failures
+
+Failed examples:
+
+rspec ./block_spec.rb:4 # Block should be valid
+rspec ./block_spec.rb:8 # Block should return all the document types it has
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rake db:test:prepare
+(in /home/jacob/NetBeansProjects/property)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rake db:test:prepare[1Pspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+."hello"
+.
+
+Finished in 0.32225 seconds
+2 examples, 0 failures
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+.F
+
+Failures:
+
+  1) Block should return all the document types it has
+     Failure/Error: block = Block.new(name=>"test", postcode=>"test", build_date=>DateTime.now)
+     NameError:
+       undefined local variable or method `name' for #<RSpec::Core::ExampleGroup::Nested_1:0xbcf5034>
+     # ./block_spec.rb:9:in `block (2 levels) in <top (required)>'
+
+Finished in 0.36438 seconds
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./block_spec.rb:8 # Block should return all the document types it has
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+.F
+
+Failures:
+
+  1) Block should return all the document types it has
+     Failure/Error: block.document_types.class.should be_array
+     NoMethodError:
+       undefined method `array?' for NilClass:Class
+     # ./block_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.48251 seconds
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./block_spec.rb:8 # Block should return all the document types it has
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+.F
+
+Failures:
+
+  1) Block should return all the document types it has
+     Failure/Error: block.document_types.class.should == "Array"
+       expected: "Array"
+            got: NilClass (using ==)
+       Diff:
+       @@ -1,2 +1,2 @@
+       -Array
+       +NilClass
+     # ./block_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.4801 seconds
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./block_spec.rb:8 # Block should return all the document types it has
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+.F
+
+Failures:
+
+  1) Block should return all the document types it has
+     Failure/Error: block.document_types.class.should == "Array"
+       expected: "Array"
+            got: Array (using ==)
+       Diff:
+     # ./block_spec.rb:12:in `block (2 levels) in <top (required)>'
+
+Finished in 0.75896 seconds
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./block_spec.rb:8 # Block should return all the document types it has
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+.F
+
+Failures:
+
+  1) Block should return all the document types it has
+     Failure/Error: block.document_types.length.should be_equal_to 1
+     NoMethodError:
+       undefined method `equal_to?' for 0:Fixnum
+     # ./block_spec.rb:13:in `block (2 levels) in <top (required)>'
+
+Finished in 0.53401 seconds
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./block_spec.rb:8 # Block should return all the document types it has
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+.F
+
+Failures:
+
+  1) Block should return all the document types it has
+     Failure/Error: block.document_types.length.should == 1
+       expected: 1
+            got: 0 (using ==)
+     # ./block_spec.rb:13:in `block (2 levels) in <top (required)>'
+
+Finished in 0.50925 seconds
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./block_spec.rb:8 # Block should return all the document types it has
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+.F
+
+Failures:
+
+  1) Block should return all the document types it has
+     Failure/Error: block.document_types.length.should == 1
+       expected: 1
+            got: 0 (using ==)
+     # ./block_spec.rb:13:in `block (2 levels) in <top (required)>'
+
+Finished in 0.56985 seconds
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./block_spec.rb:8 # Block should return all the document types it has
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+.#<Document id: 1, path: "/", document_type_id: 1, block_id: 1, created_at: "2011-07-27 18:16:19", updated_at: "2011-07-27 18:16:19", expiry_date: nil>
+F
+
+Failures:
+
+  1) Block should return all the document types it has
+     Failure/Error: block.document_types.class.should == Array
+     ArgumentError:
+       wrong number of arguments (1 for 2)
+     # /home/jacob/NetBeansProjects/property/app/models/block.rb:9:in `[]='
+     # /home/jacob/NetBeansProjects/property/app/models/block.rb:9:in `block in document_types'
+     # /home/jacob/NetBeansProjects/property/app/models/block.rb:7:in `document_types'
+     # ./block_spec.rb:15:in `block (2 levels) in <top (required)>'
+
+Finished in 0.96971 seconds
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./block_spec.rb:8 # Block should return all the document types it has
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+.F
+
+Failures:
+
+  1) Block should return all the document types it has
+     Failure/Error: block.document_types.length.should == 1
+       expected: 1
+            got: 0 (using ==)
+     # ./block_spec.rb:16:in `block (2 levels) in <top (required)>'
+
+Finished in 0.78295 seconds
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./block_spec.rb:8 # Block should return all the document types it has
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+.#<Document id: 2, path: "/", document_type_id: 2, block_id: 2, created_at: "2011-07-27 18:26:15", updated_at: "2011-07-27 18:26:15", expiry_date: nil>
+#<Document id: 2, path: "/", document_type_id: 2, block_id: 2, created_at: "2011-07-27 18:26:15", updated_at: "2011-07-27 18:26:15", expiry_date: nil>
+#<Document id: 2, path: "/", document_type_id: 2, block_id: 2, created_at: "2011-07-27 18:26:15", updated_at: "2011-07-27 18:26:15", expiry_date: nil>
+.
+
+Finished in 1.33 seconds
+2 examples, 0 failures
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb
+Sass is in the process of being separated from Haml,
+and will no longer be bundled at all in Haml 3.2.0.
+Please install the 'sass' gem if you want to use Sass.
+
+Haml will no longer automatically load Sass in Haml 3.2.0.
+Please add gem 'sass' to your Gemfile.
+
+..
+
+Finished in 0.94158 seconds
+2 examples, 0 failures
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/spec/modelsjacob@jacob-laptop:~/NetBeansProjects/property/spec/models$ rspec block_spec.rb[Kcd ..
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/specjacob@jacob-laptop:~/NetBeansProjects/property/spec$ cd..
+^C
+]0;jacob@jacob-laptop: ~/NetBeansProjects/property/specjacob@jacob-laptop:~/NetBeansProjects/property/spec$ cd..[K[K ..
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ bundle install
+Fetching source index for http://rubygems.org/
+Using rake (0.8.7) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.6) 
+Using builder (2.1.2) 
+Using i18n (0.5.0) 
+Using activemodel (3.0.6) 
+Using erubis (2.6.6) 
+Using rack (1.2.2) 
+Using rack-mount (0.6.14) 
+Using rack-test (0.5.7) 
+Using tzinfo (0.3.26) 
+Using actionpack (3.0.6) 
+Using mime-types (1.16) 
+Using polyglot (0.3.1) 
+Using treetop (1.4.9) 
+Using mail (2.2.15) 
+Using actionmailer (3.0.6) 
+Using arel (2.0.9) 
+Using activerecord (3.0.6) 
+Using activeresource (3.0.6) 
+Using bundler (1.0.10) 
+Using diff-lcs (1.1.2) 
+Using haml (3.1.2) 
+Using mocha (0.9.12) 
+Using mysql2 (0.2.6) 
+Using nifty-generators (0.4.6) 
+Using thor (0.14.6) 
+Using railties (3.0.6) 
+Using rails (3.0.6) 
+Using rspec-core (2.6.4) 
+Using rspec-expectations (2.6.0) 
+Using rspec-mocks (2.6.0) 
+Using rspec (2.6.0) 
+Using rspec-rails (2.6.1) 
+Installing sass (3.1.5) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails g mir[Kgration add_expiry_date _[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce _d[Ktod[Kggle_to_document)[K_type
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20110727194725_add_expiry_date_toggle_to_document_type.rb
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails g migration add_expiry_date__toggle_to_document_type[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [19Pbundle install
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crails g migration add_expiry_date__toggle_to_document_type[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crake dc:migrate
+(in /home/jacob/NetBeansProjects/property)
+rake aborted!
+Don't know how to build task 'dc:migrate'
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake dc:migrate[1P:migrateb:migrate
+(in /home/jacob/NetBeansProjects/property)
+==  AddExpiryDateToggleToDocumentType: migrating ==============================
+-- add_column(:document_types, :allow_expiry, :boolean, {:default=>false})
+   -> 0.6223s
+==  AddExpiryDateToggleToDocumentType: migrated (0.6230s) =====================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migratec:migrateils g migration add_expiry_date__toggle_to_document_type[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [19Pbundle install
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pcd ..[1P.. ..rspec block_spec.rb/block_spec.rbsblock_spec.rbpblock_spec.rbeblock_spec.rbcblock_spec.rbsblock_spec.rb/block_spec.rbmblock_spec.rboblock_spec.rbdblock_spec.rbeblock_spec.rblblock_spec.rb/block_spec.rb
+/home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load': no such file to load -- /specs/model/block_spec.rb (LoadError)
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `block in load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `map'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:18:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:80:in `run_in_process'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:69:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:11:in `block in autorun'
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec /specs/model/block_spec.rb[1P/model/block_spec.rb
+/home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load': no such file to load -- /spec/model/block_spec.rb (LoadError)
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `block in load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `map'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:18:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:80:in `run_in_process'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:69:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:11:in `block in autorun'
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ ls
+[0m[01;34mapp[0m        console  Gemfile       [01;34mlog[0m        Rakefile  [01;34mspec[0m  [01;34mvendor[0m
+[01;34mconfig[0m     [01;34mdb[0m       Gemfile.lock  [01;34mnbproject[0m  README    [01;34mtest[0m
+config.ru  [01;34mdoc[0m      [01;34mlib[0m           [01;34mpublic[0m     [01;34mscript[0m    [01;34mtmp[0m
+[m]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ lsrspec /spec/model/block_spec.rb[Cs/block_spec.rb
+/home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load': no such file to load -- /spec/models/block_spec.rb (LoadError)
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `block in load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `map'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/configuration.rb:419:in `load_spec_files'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/command_line.rb:18:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:80:in `run_in_process'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:69:in `run'
+	from /home/jacob/.rvm/gems/ruby-1.9.2-p180/gems/rspec-core-2.6.4/lib/rspec/core/runner.rb:11:in `block in autorun'
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec /spec/models/block_spec.rb[1Pspec/models/block_spec.rb
+[31mF[0m[31mF[0m
+
+Failures:
+
+  1) Block should be valid
+     [31mFailure/Error:[0m [31mBlock.new.should be_valid[0m
+       [31mexpected valid? to return true, got false[0m
+[36m     # ./spec/models/block_spec.rb:5:in `block (2 levels) in <top (required)>'[0m
+
+  2) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mdocument.save[0m
+     [31mNoMethodError:[0m
+       [31mundefined method `path_id' for #<Document:0xa83c69c>[0m
+[36m     # ./spec/models/block_spec.rb:14:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.45 seconds
+[31m2 examples, 2 failures[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:4[0m [36m# Block should be valid[0m
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb
+[31mF[0m[31mF[0m
+
+Failures:
+
+  1) Block should be valid
+     [31mFailure/Error:[0m [31mBlock.new.should be_valid[0m
+       [31mexpected valid? to return true, got false[0m
+[36m     # ./spec/models/block_spec.rb:5:in `block (2 levels) in <top (required)>'[0m
+
+  2) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mblock.document_types[document_type.id].name.should == "test_type"[0m
+     [31mNoMethodError:[0m
+       [31mundefined method `name' for nil:NilClass[0m
+[36m     # ./spec/models/block_spec.rb:17:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.39 seconds
+[31m2 examples, 2 failures[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:4[0m [36m# Block should be valid[0m
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb
+[31mF[0mtrue
+true
+true
+[31mF[0m
+
+Failures:
+
+  1) Block should be valid
+     [31mFailure/Error:[0m [31mBlock.new.should be_valid[0m
+       [31mexpected valid? to return true, got false[0m
+[36m     # ./spec/models/block_spec.rb:5:in `block (2 levels) in <top (required)>'[0m
+
+  2) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mblock.document_types[document_type.id].name.should == "test_type"[0m
+     [31mNoMethodError:[0m
+       [31mundefined method `name' for nil:NilClass[0m
+[36m     # ./spec/models/block_spec.rb:17:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.31 seconds
+[31m2 examples, 2 failures[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:4[0m [36m# Block should be valid[0m
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb
+[31mF[0mtrue
+true
+true
+#<DocumentType id: 7, name: "test_type", extension: ".doc", created_at: "2011-07-27 21:14:11", updated_at: "2011-07-27 21:14:11">
+#<DocumentType id: 7, name: "test_type", extension: ".doc", created_at: "2011-07-27 21:14:11", updated_at: "2011-07-27 21:14:11">
+#<DocumentType id: 7, name: "test_type", extension: ".doc", created_at: "2011-07-27 21:14:11", updated_at: "2011-07-27 21:14:11">
+[31mF[0m
+
+Failures:
+
+  1) Block should be valid
+     [31mFailure/Error:[0m [31mBlock.new.should be_valid[0m
+       [31mexpected valid? to return true, got false[0m
+[36m     # ./spec/models/block_spec.rb:5:in `block (2 levels) in <top (required)>'[0m
+
+  2) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mblock.document_types[document_type.id].name.should == "test_type"[0m
+     [31mNoMethodError:[0m
+       [31mundefined method `name' for nil:NilClass[0m
+[36m     # ./spec/models/block_spec.rb:17:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.31 seconds
+[31m2 examples, 2 failures[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:4[0m [36m# Block should be valid[0m
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb
+[31mF[0mtrue
+true
+true
+#<DocumentType id: 8, name: "test_type", extension: ".doc", created_at: "2011-07-27 21:17:22", updated_at: "2011-07-27 21:17:22">
+1
+#<DocumentType id: 8, name: "test_type", extension: ".doc", created_at: "2011-07-27 21:17:22", updated_at: "2011-07-27 21:17:22">
+1
+#<DocumentType id: 8, name: "test_type", extension: ".doc", created_at: "2011-07-27 21:17:22", updated_at: "2011-07-27 21:17:22">
+1
+[31mF[0m
+
+Failures:
+
+  1) Block should be valid
+     [31mFailure/Error:[0m [31mBlock.new.should be_valid[0m
+       [31mexpected valid? to return true, got false[0m
+[36m     # ./spec/models/block_spec.rb:5:in `block (2 levels) in <top (required)>'[0m
+
+  2) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mblock.document_types[document_type.id].name.should == "test_type"[0m
+     [31mNoMethodError:[0m
+       [31mundefined method `name' for nil:NilClass[0m
+[36m     # ./spec/models/block_spec.rb:17:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.24 seconds
+[31m2 examples, 2 failures[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:4[0m [36m# Block should be valid[0m
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb
+[32m.[0mtrue
+true
+true
+#<DocumentType id: 9, name: "test_type", extension: ".doc", created_at: "2011-07-27 21:19:42", updated_at: "2011-07-27 21:19:42">
+1
+#<DocumentType id: 9, name: "test_type", extension: ".doc", created_at: "2011-07-27 21:19:42", updated_at: "2011-07-27 21:19:42">
+1
+#<DocumentType id: 9, name: "test_type", extension: ".doc", created_at: "2011-07-27 21:19:42", updated_at: "2011-07-27 21:19:42">
+1
+{8=>#<DocumentType id: 9, name: "test_type", extension: ".doc", created_at: "2011-07-27 21:19:42", updated_at: "2011-07-27 21:19:42">}
+#<DocumentType id: 9, name: "test_type", extension: ".doc", created_at: "2011-07-27 21:19:42", updated_at: "2011-07-27 21:19:42">
+1
+[31mF[0m
+
+Failures:
+
+  1) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mblock.document_types[document_type.id].name.should == "test_type"[0m
+     [31mNoMethodError:[0m
+       [31mundefined method `name' for nil:NilClass[0m
+[36m     # ./spec/models/block_spec.rb:18:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.26 seconds
+[31m2 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb
+[32m.[0m[31mF[0m
+
+Failures:
+
+  1) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mdocument_type = DocumentType.new(:allow_expiry=>true, :name=>"test_type", :extension=>".doc")[0m
+     [31mActiveRecord::UnknownAttributeError:[0m
+       [31munknown attribute: allow_expiry[0m
+[36m     # ./spec/models/block_spec.rb:11:in `new'[0m
+[36m     # ./spec/models/block_spec.rb:11:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 0.81101 seconds
+[31m2 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb
+[32m.[0m[31mF[0m
+
+Failures:
+
+  1) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mdocument_type = DocumentType.new(:allow_expiry=>true, :name=>"test_type", :extension=>".doc")[0m
+     [31mActiveRecord::UnknownAttributeError:[0m
+       [31munknown attribute: allow_expiry[0m
+[36m     # ./spec/models/block_spec.rb:11:in `new'[0m
+[36m     # ./spec/models/block_spec.rb:11:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 0.86131 seconds
+[31m2 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb
+[32m.[0m[31mF[0m
+
+Failures:
+
+  1) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mdocument_type = DocumentType.new(:name=>"test_type", :extension=>".doc", :allow_expiry=>true)[0m
+     [31mActiveRecord::UnknownAttributeError:[0m
+       [31munknown attribute: allow_expiry[0m
+[36m     # ./spec/models/block_spec.rb:11:in `new'[0m
+[36m     # ./spec/models/block_spec.rb:11:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.65 seconds
+[31m2 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb
+[32m.[0m[31mF[0m
+
+Failures:
+
+  1) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mdocument_type = DocumentType.new(:name=>"test_type", :extension=>".doc", :allow_expiry=>true)[0m
+     [31mActiveRecord::UnknownAttributeError:[0m
+       [31munknown attribute: allow_expiry[0m
+[36m     # ./spec/models/block_spec.rb:11:in `new'[0m
+[36m     # ./spec/models/block_spec.rb:11:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.3 seconds
+[31m2 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ ^C
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb/spec/models/block_spec.rbls[Krspec /spec/model/block_spec.rbs/model/block_spec.rb[17Pake db:migratec:migrateils g migration add_expiry_date__toggle_to_document_type[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [19Pbundle install
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crails g migration add_expiry_date__toggle_to_document_type[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[Kblocks_data [A
+
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20110727215405_add_blocks_data.rb
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ 
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails g migration add_blocks_data [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[Ktypes_data
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20110727215432_add_types_data.rb
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails g migration add_types_datablocks_data [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pspec spec/models/block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/spec/models/block_spec.rb[1Pspec/models/block_spec.rb
+[32m.[0m[31mF[0m
+
+Failures:
+
+  1) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mdocument_type = DocumentType.new(:name=>"test_type", :extension=>".doc", :allow_expiry=>true)[0m
+     [31mActiveRecord::UnknownAttributeError:[0m
+       [31munknown attribute: allow_expiry[0m
+[36m     # ./spec/models/block_spec.rb:11:in `new'[0m
+[36m     # ./spec/models/block_spec.rb:11:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.29 seconds
+[31m2 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb
+[32m.[0m[31mF[0m
+
+Failures:
+
+  1) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mdocument_type.allow_expiry=true[0m
+     [31mNoMethodError:[0m
+       [31mundefined method `allow_expiry=' for #<DocumentType:0x9c29b0c>[0m
+[36m     # ./spec/models/block_spec.rb:12:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.58 seconds
+[31m2 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rbails g migration add_types_data[K[K[K[K[K[K[K[K[K[K[K_valid_from_ date_to_types
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20110727222655_add_valid_from_date_to_types.rb
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails g migration add_valid_from_ddate_to_types[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[2Pspec spec/models/block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cails g migration add_types_datablocks_data [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pspec spec/models/block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/spec/models/block_spec.rbls[Krspec /spec/model/block_spec.rbs/model/block_spec.rb[17Pake db:migratespec /specs/model/block_spec.rb[1P/model/block_spec.rbls[Krspec /spec/models/block_spec.rb[1Pspec/models/block_spec.rbails g migration add_blocks_data [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Ptypes_data
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20110727223022_add_types_data.rb
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails g migration add_types_datavalid_from_ddate_to_types[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[2Pspec spec/models/block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cails g migration add_types_datablocks_data [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pspec spec/models/block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/spec/models/block_spec.rbls[Krspec /spec/model/block_spec.rbs/model/block_spec.rb[17Pake db:migrate
+(in /home/jacob/NetBeansProjects/property)
+rake aborted!
+/home/jacob/NetBeansProjects/property/db/migrate/20110727215405_add_blocks_data.rb:3: invalid multibyte char (US-ASCII)
+/home/jacob/NetBeansProjects/property/db/migrate/20110727215405_add_blocks_data.rb:3: invalid multibyte char (US-ASCII)
+/home/jacob/NetBeansProjects/property/db/migrate/20110727215405_add_blocks_data.rb:3: syntax error, unexpected $end, expecting '}'
+...'AH1 7HB', :build_date=>'1984­01­08'.to_date},
+...                               ^
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate
+(in /home/jacob/NetBeansProjects/property)
+rake aborted!
+/home/jacob/NetBeansProjects/property/db/migrate/20110727215405_add_blocks_data.rb:4: invalid multibyte char (US-ASCII)
+/home/jacob/NetBeansProjects/property/db/migrate/20110727215405_add_blocks_data.rb:4: invalid multibyte char (US-ASCII)
+/home/jacob/NetBeansProjects/property/db/migrate/20110727215405_add_blocks_data.rb:4: syntax error, unexpected $end, expecting '}'
+...'AA5 0EH', :build_date=>'1977­06­20'.to_date},
+...                               ^
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate
+(in /home/jacob/NetBeansProjects/property)
+==  AddBlocksData: migrating ==================================================
+rake aborted!
+An error has occurred, all later migrations canceled:
+
+undefined method `to_datetimee' for "2000/10/14":String
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate
+(in /home/jacob/NetBeansProjects/property)
+==  AddBlocksData: migrating ==================================================
+==  AddBlocksData: migrated (2.0480s) =========================================
+
+==  AddValidFromDateToTypes: migrating ========================================
+-- default()
+rake aborted!
+An error has occurred, all later migrations canceled:
+
+undefined method `default' for #<ActiveRecord::ConnectionAdapters::Mysql2Adapter:0x9f4db6c>
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate
+(in /home/jacob/NetBeansProjects/property)
+==  AddValidFromDateToTypes: migrating ========================================
+-- add_column(:document_types, :valid_from, :datetime, {:default=>Sat, 01 Jan 2000 00:00:01 +0000})
+   -> 0.5870s
+==  AddValidFromDateToTypes: migrated (0.5950s) ===============================
+
+==  AddTypesData: migrating ===================================================
+==  AddTypesData: migrated (1.0563s) ==========================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:test:prepare
+(in /home/jacob/NetBeansProjects/property)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:test:prepare[5Pmigrateils g migration add_types_datavalid_from_ddate_to_types[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[2Pspec spec/models/block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[32m.[0m[32m.[0m
+
+Finished in 1.14 seconds
+[32m2 examples, 0 failures[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb[11Pake db:test:prepare[5Pmigrateils g migration add_types_data[K[K[K[K[K[K[K[K[K[K[K[K[K[Kremobe[K[Kve_default_ values fro[K[K[K[K_fromDoc[K[K[K_doc_types
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20110727231114_remove_default_values_from_doc_types.rb
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails g migration remove_default_vvalues_from_doc_types[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[2Pspec spec/models/block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pake db:test:prepare[K[K[K[K[K[K[K[K[K[K[K[Kmigrate
+(in /home/jacob/NetBeansProjects/property)
+==  RemoveDefaultValuesFromDocTypes: migrating ================================
+-- execute("alter table document_types alter allow_expiry drop default")
+   -> 0.1795s
+-- execute("alter table document_types alter valid_from drop default")
+   -> 0.1473s
+==  RemoveDefaultValuesFromDocTypes: migrated (0.3275s) =======================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrateils g migration remove_default_vvalues_from_doc_types[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktypes_again
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20110727231731_types_again.rb
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rails g migration types_again[14Pke db:migrate
+(in /home/jacob/NetBeansProjects/property)
+rake aborted!
+An error has occurred, all later migrations canceled:
+
+uninitialized constant TypesAgain
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+==  TypesAgain: migrated (1.5010s) ============================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rk[Kake db:mif[Kgrate:down VERSION[K[K[K[K[K[K[KVERSION=2009 0408054532
+(in /home/jacob/NetBeansProjects/property)
+^X^Crake aborted!
+
+/home/jacob/NetBeansProjects/property/Rakefile:4:in `<top (required)>'
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=200900408054532[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K2011 0727231731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: reverting =====================================================
+==  TypesAgain: reverted (1.2836s) ============================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=201100727231731[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C VERSION=201107[1P27231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C VERSION=2011072[1P7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C VERSION=20110727[1P231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C VERSION=201107272[1P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu VERSION=20110727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp VERSION=20110727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+==  TypesAgain: migrated (1.2167s) ============================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731
+(in /home/jacob/NetBeansProjects/property)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C VERSION=20110727[1P231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C VERSION=201107272[1P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd VERSION=20110727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp VERSION=20110727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cw VERSION=20110727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C VERSION=2011072[1P7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C VERSION=20110727[1P231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co VERSION=20110727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci VERSION=20110727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C VERSION=2011072[1P7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cw VERSION=20110727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn VERSION=20110727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: reverting =====================================================
+==  TypesAgain: reverted (0.5560s) ============================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=201100727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+1
+1
+1
+==  TypesAgain: migrated (1.5287s) ============================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: reverting =====================================================
+==  TypesAgain: reverted (1.2937s) ============================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=201100727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+1
+false
+1
+true
+1
+false
+==  TypesAgain: migrated (1.0134s) ============================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: reverting =====================================================
+==  TypesAgain: reverted (0.5425s) ============================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=201100727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+1
+false
+rake aborted!
+Validation failed: Allow expiry can't be blank
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731
+(in /home/jacob/NetBeansProjects/property)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=201100727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+rake aborted!
+Validation failed: Allow expiry can't be blank
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731
+(in /home/jacob/NetBeansProjects/property)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=201100727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+rake aborted!
+Validation failed: Valid from can't be blank
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731
+(in /home/jacob/NetBeansProjects/property)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=201100727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+==  TypesAgain: migrated (1.2996s) ============================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: reverting =====================================================
+==  TypesAgain: reverted (0.5917s) ============================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=201100727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+rake aborted!
+Validation failed: Valid from can't be blank
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731
+(in /home/jacob/NetBeansProjects/property)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=201100727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+#<DocumentType id: nil, name: "Asbestos Survey", extension: "all", created_at: nil, updated_at: nil, allow_expiry: false, valid_from: nil>
+rake aborted!
+Validation failed: Valid from can't be blank
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731
+(in /home/jacob/NetBeansProjects/property)
+^Crake aborted!
+
+/home/jacob/NetBeansProjects/property/Rakefile:4:in `<top (required)>'
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731
+(in /home/jacob/NetBeansProjects/property)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=201100727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+{:name=>"Asbestos Survey", :extension=>"all", :allow_expiry=>"0", :valid_from=>Sat, 01 Jan 2000 00:00:00 +0000}
+#<DocumentType id: nil, name: "Asbestos Survey", extension: "all", created_at: nil, updated_at: nil, allow_expiry: false, valid_from: nil>
+rake aborted!
+Validation failed: Valid from can't be blank
+
+(See full trace by running task with --trace)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731
+(in /home/jacob/NetBeansProjects/property)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:down VERSION=201100727231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731
+(in /home/jacob/NetBeansProjects/property)
+==  TypesAgain: migrating =====================================================
+==  TypesAgain: migrated (1.2529s) ============================================
+
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:migrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crake db:test:prepare
+(in /home/jacob/NetBeansProjects/property)
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rake db:test:preparemigrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C090408054532[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cils g migration types_again[14Pke db:migrateils g migration types_again[14Pke db:migrateils g migration types_again[14Pke db:migrateils g migration remove_default_vvalues_from_doc_types[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[2Pspec spec/models/block_spec.rb
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[32m.[0m[31mF[0m
+
+Failures:
+
+  1) Block should return all the document types it has in a id referenced hash
+     [31mFailure/Error:[0m [31mdocument_type.save![0m
+     [31mActiveRecord::RecordInvalid:[0m
+       [31mValidation failed: Valid from can't be blank[0m
+[36m     # ./spec/models/block_spec.rb:12:in `block (2 levels) in <top (required)>'[0m
+
+Finished in 1.14 seconds
+[31m2 examples, 1 failure[0m
+
+Failed examples:
+
+[31mrspec ./spec/models/block_spec.rb:8[0m [36m# Block should return all the document types it has in a id referenced hash[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ rspec spec/models/block_spec.rb
+[32m.[0m[32m.[0m
+
+Finished in 1.39 seconds
+[32m2 examples, 0 failures[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ bungle [K[K[K[Kdle install
+Fetching source index for http://rubygems.org/
+Using rake (0.8.7) 
+Using abstract (1.0.0) 
+Using activesupport (3.0.6) 
+Using builder (2.1.2) 
+Using i18n (0.5.0) 
+Using activemodel (3.0.6) 
+Using erubis (2.6.6) 
+Using rack (1.2.2) 
+Using rack-mount (0.6.14) 
+Using rack-test (0.5.7) 
+Using tzinfo (0.3.26) 
+Using actionpack (3.0.6) 
+Using mime-types (1.16) 
+Using polyglot (0.3.1) 
+Using treetop (1.4.9) 
+Using mail (2.2.15) 
+Using actionmailer (3.0.6) 
+Using arel (2.0.9) 
+Using activerecord (3.0.6) 
+Using activeresource (3.0.6) 
+Using bundler (1.0.10) 
+Installing cocaine (0.1.0) 
+Using diff-lcs (1.1.2) 
+Using haml (3.1.2) 
+Using mocha (0.9.12) 
+Using mysql2 (0.2.6) 
+Using nifty-generators (0.4.6) 
+Installing paperclip (2.3.15) 
+Using thor (0.14.6) 
+Using railties (3.0.6) 
+Using rails (3.0.6) 
+Using rspec-core (2.6.4) 
+Using rspec-expectations (2.6.0) 
+Using rspec-mocks (2.6.0) 
+Using rspec (2.6.0) 
+Using rspec-rails (2.6.1) 
+Using sass (3.1.5) 
+[32mYour bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ bundle installrspec spec/models/block_spec.rb[11Pake db:test:preparemigrate:up VERSION=201107227231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cup VERSION=2011072[C[C[2P31731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdown VERSION=20110[C[C7231731[A]0;jacob@jacob-laptop: ~/NetBeansProjects/propertyjacob@jacob-laptop:~/NetBeansProjects/property$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C090408054532[A]0;jacob@jacob-laptop: ~/Net

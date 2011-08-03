@@ -1,0 +1,26 @@
+Rails 3, ruby 1.9.2.
+
+The database config is currently set to root, no password, mysql2, mysqld.sock.
+Make a property_development database and a property_test one if you want to
+play with the (rather limited) tests. Only one vaguely interesting model
+method was written 'block.document_types' so only this was tested (and should
+probably have been a scope anyway). A bit more work would mean some
+controller testing (mainly for the documents controller) and a few more
+view helpers - got a little complex there. Also, some custom validations
+would be good to add (particularly with regard to what can have certain
+document types.
+
+Adding records can be done through the links on this Index page, they should
+only display in cases where appropriate. Upload is handled through paperclip,
+download through this index page again (as well as document destruction, document
+type addition (at the bottom of the page) and destruction) and add, edit, show and
+delete (basic restful stuff) for blocks. Out of date fire certificates should
+display in *bold and red* and expiry date should only be an option for these
+(select a date in the past for this type when uploading to show this).
+
+As mentioned earlier document types can be added at the bottom of the page and this
+allows a 'valid_from' and an 'allow_expiry'. The first to cover things like asbestos
+reports - new government regulations which are not retrospective - and the second
+for things like fire certification - that which needs renewing.
+
+

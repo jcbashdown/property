@@ -1,0 +1,20 @@
+= form_for @document_type do |f|
+  = f.error_messages
+  %p
+    = f.label :name
+    %br
+    = f.text_field :name
+  %p
+    = f.label :extension
+    %br
+    = f.text_field :extension
+  %p
+    = f.label :allow_expiry
+    %br
+    = f.check_box :allow_expiry
+  %p
+    = f.label :valid_from
+    %br
+    = f.datetime_select :valid_from
+  %p
+    = f.submit

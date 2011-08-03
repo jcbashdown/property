@@ -1,0 +1,15 @@
+= form_for :document, @document, :url => {:action=>'create'}, :html => { :multipart => true } do |f|
+  = f.error_messages
+  %p
+    = f.label "Select File"
+    %br
+    = f.file_field :doc
+  -if @type.allow_expiry
+    %p
+    = f.label :expiry_date
+    %br
+    = f.datetime_select :expiry_date
+  %input{ :type => "hidden", :value => @block.id, :name => 'document[block_id]'}
+  %input{ :type => "hidden", :value => @type.id, :name => 'document[document_type_id]'}
+  %p
+    = f.submit
