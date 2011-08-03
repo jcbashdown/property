@@ -8,10 +8,6 @@ class Document < ActiveRecord::Base
   validates :document_type_id, :presence=>true
   validates :doc_file_name, :presence=>true
 
-#  rails three way to do custom validations is custom class which I won't do right now - more familiar rails 2 stuff below
-  private
-    def asbestos_date()
-    # Complex validation here...
-    end
+#TODO - custom validation
 
 end
